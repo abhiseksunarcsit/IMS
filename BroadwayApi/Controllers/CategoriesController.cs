@@ -24,7 +24,7 @@ namespace IMSMorning.Host.Controllers
         {
             var result = _categoryServices.CreateCategory(categories);
             if (result.Success)
-                return Ok(result.Message);
+                return Ok("Create category success");
 
             else
                 return BadRequest(result.Message);
